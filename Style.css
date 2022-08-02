@@ -1,0 +1,146 @@
+body {
+  font-family: "Cinzel", serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+:root {
+  --color: #e90c0c;
+}
+ul {
+  list-style: none;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+input {
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.books-container {
+  margin-top: 100px;
+  padding: 0 300px;
+}
+.container .form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.container .form input {
+  margin: 0;
+  width: calc(100% - 40px);
+  padding: 10px 20px;
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  border: 1px solid black;
+}
+.container .form input:focus {
+  outline: none;
+}
+.container .form h3 {
+  font-weight: bolder;
+  margin: 0;
+  padding-top: 20px;
+}
+.container .add {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+}
+.container .add input {
+  width: 100%;
+  border: none;
+  background-color: var(--color);
+  padding: 15px;
+  font-weight: bolder;
+  font-size: 21px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: white;
+}
+.error {
+  text-align: center;
+  margin-top: 30px;
+}
+.error p {
+  color: red;
+}
+.ul-book.ddone li:nth-child(1),
+.ul-book.ddone li:nth-child(2),
+.ul-book.ddone li:nth-child(3) {
+  text-decoration: line-through;
+  color: red;
+}
+
+.addition-in {
+  margin-top: 100px;
+}
+.addition-in .info ul {
+  font-weight: bolder;
+  font-size: 23px;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: start;
+}
+.addition-in .info {
+  margin-bottom: 50px;
+}
+.addition-in .info ul li:nth-child(1),
+.addition-in .info ul li:nth-child(2) {
+  width: 25%;
+}
+.addition-in .info ul li:nth-child(3) {
+  width: 20%;
+}
+.addition-in .info ul li:nth-child(4),
+.addition-in .info ul li:nth-child(5) {
+  width: 15%;
+}
+.addition-in .here ul {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0;
+  margin-bottom: 20px;
+  user-select: none;
+}
+.addition-in .here ul li:nth-child(1),
+.addition-in .here ul li:nth-child(2) {
+  width: 25%;
+}
+.addition-in .here ul li:nth-child(3) {
+  width: 20%;
+}
+.addition-in .here ul li:nth-child(4),
+.addition-in .here ul li:nth-child(5) {
+  width: 15%;
+}
+.addition-in .here ul .done {
+  color: green;
+  cursor: pointer;
+}
+.addition-in .here ul .remove {
+  color: red;
+  cursor: pointer;
+}
+@media (max-width: 1500px) {
+  .books-container {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 1100px) {
+  .books-container {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 800px) {
+  .books-container {
+    padding: 0 10px;
+  }
+  .container .add {
+    flex-flow: column wrap;
+    gap: 10px;
+  }
+}
